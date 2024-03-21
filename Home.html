@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="Fonte">
+
     <style>
-        header{
-            height:150px;
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Koulen', sans-serif;
         }
+
+        header {
+            height: 200px;
+            width: 100%;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        hr {
+            background-color: orange;
+            height: 10px;
+        }
+        .container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.animation {
+    animation: moveInRight 10s linear infinite;
+    white-space: nowrap; 
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
     </style>
 </head>
+
 <body>
-    <header><img id="logo" src="./Logo.png" alt="Logo"/></header>
+    <header><img id="logo" src="./Logo.png" alt="Logo" /></header>
+    <hr>
+    <div class="container">
+        <h1 class="animation">Aqui na <strong>Dream House</strong> você encontra a casa dos seus sonhos!</h1>
+            <h2 class="animation"><p><dl>tag</dl></dl>VOce me entende</p>Aqui na <strong>Dream House</strong> você encontra a casa dos seus sonhos!</h2>
+            <h3 class="animation"><ul><li>Nao sei</li></ul>Aqui na <strong>Dream <br>House</strong> você encontra a casa dos seus sonhos!</h3>
+            <h4 class="animation"><dt>tag Dt</DT></Dt></dt> na <ol><li>Nao sei</li></ol><strong>Dream House</strong> você encontra a casa dos seus sonhos!</h4>
+            <h5 class="animation"><dd>Tag DD</dd>Aqui na <b>Dream House</b> você encontra a casa dos seus sonhos!</h5>
+            <h6 class="animation"><a href="https://github.com/Rafhael1901/DreamHouse.git">Visite a Dreamhouse!</a>Aqui na <em>Dream House</em> você encontra a casa dos seus sonhos!</h6>
+            </div>
+        </div>
 </body>
+
 </html>
